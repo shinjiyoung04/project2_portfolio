@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="신지영의 소프트웨어 엔지니어 포트폴리오. Java/Spring Boot 기반 웹 개발과 Python/FastAPI 기반 ML 추천 서비스 프로젝트를 소개합니다." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:title" content="Shin Ji Young | Software Engineer Portfolio" />
+  <meta property="og:description" content="문제를 분석하고, 데이터와 소프트웨어로 구현합니다. 신지영의 개발 프로젝트 포트폴리오." />
+  <meta property="og:type" content="website" />
+  <title>신지영 | Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="주 메뉴">
+      <a class="brand" href="#home" aria-label="홈으로">S<span>.</span>JY <span class="brand-small">/ PORTFOLIO</span></a>
+      <button class="menu-toggle" type="button" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#deep-dive">Case Study</a><a href="#skills">Skills</a><a href="#contact" class="nav-contact">Contact ↗</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero wrap">
+      <div class="hero-glow"></div>
+      <div class="eyebrow"><span class="status-dot"></span> ENTRY-LEVEL SOFTWARE ENGINEER · PORTFOLIO</div>
+      <h1>기술을 이해하고,<br /><span class="gradient-text">서비스로 구현합니다.</span></h1>
+      <p class="hero-description">안녕하세요, 신지영입니다. Java·Spring Boot 기반 웹 애플리케이션을 학습하고, Python·FastAPI로 대화 데이터를 분석하는 AI 추천 파이프라인을 구현했습니다. 문제를 정의하고 실제 동작하는 기능으로 연결하는 개발자를 지향합니다.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#projects">프로젝트 살펴보기 <span>↗</span></a><a class="btn btn-outline" href="https://github.com/shinjiyoung04" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div>
+      <div class="hero-meta"><span>01 / AI & ML</span><span>02 / BACKEND</span><span>03 / SECURITY</span></div>
+      <div class="hero-ornament" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orb-center">{<span>build</span>}</div></div>
+    </section>
+
+    <section id="about" class="section light-section">
+      <div class="wrap two-col about-layout"><div><div class="section-kicker">01 — ABOUT ME</div><h2>꾸준히 배우고,<br>직접 검증합니다.</h2></div><div class="about-content"><p>중부대학교 정보보호학과에서 정보보안과 소프트웨어를 학습했으며, 솔데스크 개발 교육을 통해 웹 애플리케이션의 데이터 처리 흐름을 익혔습니다.</p><p>팀 프로젝트 <strong>MeetUpLog</strong>에서는 사용자 대화 분석부터 추천 결과 산출까지 ML 파이프라인을 담당했습니다. 협업에서는 역할과 책임을 명확히 하고, 문제를 공유하며 해결하는 과정을 중요하게 생각합니다.</p><div class="about-facts"><div><small>EDUCATION</small><strong>중부대학교 정보보호학과</strong><span>졸업예정</span></div><div><small>FOCUS</small><strong>Backend · AI/ML</strong><span>서비스 개발 및 데이터 처리</span></div></div></div></div>
+    </section>
+
+    <section id="projects" class="section projects-section wrap">
+      <div class="section-kicker">02 — SELECTED WORK</div><div class="section-heading"><h2>Selected Projects<span class="period">.</span></h2><p>프로젝트의 규모보다 문제 해결 과정과 실제 담당 범위를 중심으로 소개합니다.</p></div>
+      <article class="featured-project"><div class="project-topline"><span class="number">PROJECT / 01</span><span class="project-year">2026.07 — 2026.08 · TEAM OF 4</span></div><div class="project-grid"><div class="project-copy"><div class="project-category">AI RECOMMENDATION · NLP · API</div><h3>MeetUpLog</h3><p class="lead">그룹 채팅 속 다양한 취향을 분석해 영화 선택을 돕는 AI 추천 서비스</p><p>모임 참여자들이 채팅으로 나눈 선호·비선호 및 OTT 조건을 분석하고, 영화 후보에 대한 적합도를 계산해 TOP 3 추천 결과를 제공하는 프로젝트입니다.</p><div class="my-role"><span>MY CONTRIBUTION</span><strong>채팅 데이터 분석 · 의미 유사도 · ML 추천 파이프라인</strong><p>FastAPI 기반 모델 서빙, 문장 임베딩 및 코사인 유사도 계산, 대화 문맥·인물 참조·메타데이터 기반 후보 필터링 작업을 수행했습니다.</p></div><div class="tags"><span>Python</span><span>FastAPI</span><span>NLP</span><span>Sentence Embedding</span><span>scikit-learn</span></div><div class="project-links"><a href="#deep-dive" class="text-link">기술 상세 보기 ↗</a><a href="https://github.com/shinjiyoung04/SD_MeetUpLOG" target="_blank" rel="noopener noreferrer" class="text-link muted-link">GitHub ↗</a></div></div><div class="project-preview"><img src="assets/meetuplog-recommendation.png" alt="MeetUpLog 실제 화면: 채팅 기반 AI 영화 추천 카드와 작품 상세 모달" loading="lazy" /><div class="image-caption">ACTUAL PRODUCT SCREENSHOTS <span>↗</span></div></div></div></article>
+      <div class="secondary-projects">
+        <article class="secondary-card"><div class="card-index">PROJECT / 02 <span>SECURITY</span></div><div class="secondary-icon">⌘</div><h3>웹 공격 탐지 및 자동 차단</h3><p>Suricata·Fail2Ban을 활용해 SQL Injection, XSS, Brute Force 공격을 탐지하고 대응하는 졸업 프로젝트입니다.</p><div class="role-line"><b>담당</b> Thymeleaf 기반 관리자 대시보드, 공격 로그 화면 및 데이터 연동</div><div class="tags dark-tags"><span>Linux</span><span>Suricata</span><span>Fail2Ban</span><span>Thymeleaf</span></div></article>
+        <article class="secondary-card"><div class="card-index">PROJECT / 03 <span>BACKEND</span></div><div class="secondary-icon">{ }</div><h3>Spring Boot 웹 서비스</h3><p>Spring Boot·JPA 기반 게시판에서 CRUD 일부 기능과 Pageable 페이징, DTO 기반 데이터 전달 및 Thymeleaf 출력을 구현했습니다.</p><div class="role-line"><b>담당</b> 게시글 등록·조회·상세 기능, MVC 구조 및 페이징</div><div class="tags dark-tags"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>MySQL</span></div></article>
+      </div>
+    </section>
+
+    <section id="deep-dive" class="section deep-section"><div class="wrap"><div class="section-kicker">03 — ENGINEERING CASE STUDY</div><div class="section-heading"><h2>Inside MeetUpLog<span class="period">.</span></h2><p>팀 전체 구현 내용과 개인 기여를 구분해 설명합니다.</p></div>
+      <div class="story-intro"><div><span class="mini-label">PROBLEM</span><h3>“우리 무슨 영화 볼까?”<br>길어지는 대화가 문제였습니다.</h3></div><p>여러 명의 취향과 제약 조건이 채팅에 흩어지면, 후보를 다시 모으고 의견을 조율하는 데 시간이 소요됩니다. MeetUpLog는 대화에서 취향 정보를 구조화해 추천 후보를 제공하도록 기획됐습니다.</p></div>
+      <div class="pipeline-head"><span>PERSONAL ML WORKFLOW</span><span>DATA → INFERENCE → RECOMMENDATION</span></div><div class="pipeline"><div class="pipe-item"><em>01</em><b>대화 데이터</b><small>채팅 입력 · 영화 메타데이터</small></div><div class="pipe-arrow">→</div><div class="pipe-item"><em>02</em><b>선호도 분석</b><small>의도 · 키워드 · 문맥</small></div><div class="pipe-arrow">→</div><div class="pipe-item"><em>03</em><b>의미 비교</b><small>임베딩 · 코사인 유사도</small></div><div class="pipe-arrow">→</div><div class="pipe-item"><em>04</em><b>조건 반영</b><small>OTT · 인물 · 국가</small></div><div class="pipe-arrow">→</div><div class="pipe-item"><em>05</em><b>추천 제공</b><small>랭킹 · TOP 3</small></div></div>
+      <div class="detail-grid"><div class="detail-card"><span>01 / CONTEXT</span><h4>짧은 발화도 문맥 속에서 해석</h4><p>대화 속 취향 표현과 참조 대상을 분석하고, 사용자가 말한 장르·배우·감독 등의 조건을 추천에 반영하도록 처리했습니다.</p></div><div class="detail-card"><span>02 / SEMANTIC MATCHING</span><h4>키워드를 넘어 의미 유사도 계산</h4><p>Sentence Transformer 기반 임베딩과 코사인 유사도 비교를 구현했습니다. 저장소에는 TF-IDF 기반 유사도 계산 및 관련 테스트 코드도 포함되어 있습니다.</p></div><div class="detail-card"><span>03 / FILTERING</span><h4>취향과 제약을 함께 고려</h4><p>OTT 지원 여부, 제작 국가, 배우·감독과 같은 복합 조건을 바탕으로 추천 후보를 필터링하고 결과의 일관성을 개선했습니다.</p></div><div class="detail-card"><span>04 / SERVING</span><h4>실제 서비스에 연결되는 모델 API</h4><p>Python·FastAPI로 ML 서비스 API를 구성했습니다. 전체 앱의 인증·실시간 채팅 기능은 다른 팀원이 주로 구현한 공동 성과입니다.</p></div></div>
+      <div class="artifact-showcase"><div class="showcase-heading"><div><span class="mini-label">PRODUCT EXPERIENCE</span><h3>실제 서비스 화면</h3></div><p>주간보고서 및 발표 자료와 함께 제출된 구현 화면입니다.</p></div><div class="screenshot-grid"><figure><button class="image-button" data-image="assets/meetuplog-recommendation.png" data-alt="추천 결과 상세 화면" aria-label="추천 결과 화면 크게 보기"><img src="assets/meetuplog-recommendation.png" alt="그룹 채팅과 개인별 추천 상세 화면" loading="lazy" /></button><figcaption>01. 채팅 분석 후 영화 후보 추천 및 상세 정보</figcaption></figure><figure><button class="image-button" data-image="assets/meetuplog-confirmation.png" data-alt="최종 영화 확정 화면" aria-label="확정 화면 크게 보기"><img src="assets/meetuplog-confirmation.png" alt="영화 확정 및 OTT 링크 복사 화면" loading="lazy" /></button><figcaption>02. 영화 확정 후 OTT 검색과 링크 복사</figcaption></figure></div></div>
+      <div class="demo-showcase"><div><span class="mini-label">DEMO VIDEO</span><h3>시연 영상</h3><p>첨부된 프로젝트 시연 영상 원본입니다. 실제 동작 흐름을 영상으로 확인할 수 있습니다.</p></div><video controls preload="none" playsinline poster="assets/meetuplog-recommendation.png" aria-label="MeetUpLog 프로젝트 시연 영상"><source src="assets/meetuplog-demo.mp4" type="video/mp4" />브라우저가 동영상 재생을 지원하지 않습니다.</video></div>
+      <div class="evidence"><span>VERIFICATION NOTE</span><p>이 페이지의 개인 기여는 주간 활동 보고서와 최종 발표자료의 담당 업무를 기준으로 작성했습니다. 프로젝트 추천 점수는 서비스 내부의 적합도 표시이며, 모델의 검증 정확도나 성능 향상률을 의미하지 않습니다.</p><a href="https://app.notion.com/p/SD-2-Meetup-Log-ML-Service-3bc0162c669f800485f9ce65ddce6264?source=copy_link" target="_blank" rel="noopener noreferrer">원본 프로젝트 기록 보기 ↗</a></div>
+    </div></section>
+
+    <section id="skills" class="section light-section"><div class="wrap"><div class="section-kicker">04 — TECH STACK</div><div class="section-heading"><h2>Tools & Technologies<span class="period">.</span></h2><p>이력서와 프로젝트에서 확인되는 학습·활용 기술을 정리했습니다.</p></div><div class="skill-grid"><div class="skill-group"><span>BACKEND</span><h3>서버와 데이터 처리</h3><div class="skill-tags"><span>Java</span><span>Spring Boot</span><span>Spring Data JPA</span><span>MyBatis</span><span>REST API</span><span>MySQL</span></div></div><div class="skill-group"><span>PYTHON & AI</span><h3>ML 파이프라인</h3><div class="skill-tags"><span>Python</span><span>FastAPI</span><span>scikit-learn</span><span>NLP</span><span>Sentence Embedding</span><span>Cosine Similarity</span></div></div><div class="skill-group"><span>WEB & TOOLS</span><h3>개발 환경·협업</h3><div class="skill-tags"><span>React</span><span>JavaScript</span><span>Thymeleaf</span><span>Git</span><span>GitHub</span><span>Linux</span></div></div></div><div class="credential"><strong>Certifications & Learning</strong><p>정보처리기사 필기 합격(실기 미취득) · 정보처리기능사 · 네트워크관리사 2급 · K-Shield 주니어 기초과정 수료</p></div></div></section>
+
+    <section id="contact" class="section contact-section wrap"><div class="section-kicker">05 — CONTACT</div><h2>함께 해결할 문제가 있다면,<br><span class="gradient-text">이야기 나누고 싶습니다.</span></h2><p>백엔드 개발과 AI/ML 연동 경험을 바탕으로, 배우고 기여할 기회를 찾고 있습니다.</p><div class="contact-actions"><a class="btn btn-primary" href="https://www.linkedin.com/in/jiyoung-shin-016b72433/" target="_blank" rel="noopener noreferrer">LinkedIn에서 연결하기 ↗</a><a class="btn btn-outline" href="https://github.com/shinjiyoung04" target="_blank" rel="noopener noreferrer">GitHub 방문하기 ↗</a><a class="btn btn-outline" href="https://app.notion.com/p/Shin-JiYoung-3aa0162c669f83f8a1f78187882b4b99?source=copy_link" target="_blank" rel="noopener noreferrer">Notion 이력 보기 ↗</a></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>S<span class="period">.</span>JY / PORTFOLIO</span><small>© <span id="year">2026</span> Shin Ji Young. Built with care.</small><a href="#home">BACK TO TOP ↑</a></div></footer>
+  <dialog id="imageDialog" aria-label="프로젝트 화면 크게 보기"><button id="closeDialog" class="close-dialog" aria-label="닫기">×</button><img id="dialogImage" alt="" /></dialog>
+  <script src="script.js" defer></script>
+</body></html>
